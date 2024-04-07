@@ -1,0 +1,396 @@
+@font-face {
+  font-family: headingfont;
+  src: url(/fonts/Jost-Regular.ttf);
+}
+@font-face {
+  font-family: bodyfont;
+  src: url(/fonts/OpenSans-Regular.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: bodyfont;
+}
+
+#toggle-btn{
+  border: transparent;
+}
+
+#header h2{
+  font-size: 24px;
+  font-family: headingfont;
+}
+
+#header .img-fluid{
+  max-width: 100%;
+  height: auto;
+}
+
+#header img{
+  vertical-align: middle;
+  overflow: clip;
+
+}
+
+#navlist {
+  color: white;
+}
+
+#get-started {
+  color: white;
+}
+
+#clientList img {
+  width: 100px;
+  height: 40px;
+  margin-left: 90px;
+}
+
+#aboutUs {
+  font-size: 20px;
+}
+
+#portfolio ul li:hover {
+  background-color: #48b2e4;
+  color: white;
+}
+.navbar {
+  background-color: #37517e;
+  padding: 10px;
+}
+.navbar-brand {
+  margin-left: 50px;
+  font-size: 32px; 
+  font-family: headingfont;
+}
+
+.navbar a {
+  color: white;
+}
+.navbar a:hover {
+  color: #48b2e3;
+}
+
+.navbar-nav .nav-link.active{
+  color: #48b2e3 !important;
+}
+
+@media screen and (max-width: 760px){
+.collapse:not(.show) {
+  display: none !important;
+}}
+
+
+#header {
+  background-color: #37517e;
+}
+
+
+#getStarted {
+  padding: 8px 20px;
+  margin-left: 30px;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 14px;
+  border: 2px solid #47b2e4;
+  font-weight: 600;
+}
+
+.navbar .nav-item {
+  padding: 10px 0px 10px 20px;
+}
+/* .navbar .nav-item:last-child{
+    margin-right: 5px;
+} */
+
+.card ul {
+  list-style: none;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.card ul li del {
+  color: grey;
+}
+
+#beforeFooter .row .col-3 ul {
+  list-style: none;
+}
+
+#beforeFooter .row .col-3 ul li::before {
+  content: "> ";
+}
+
+#beforeFooter .row .col-3 ul li {
+  line-height: 40px;
+}
+#beforeFooter .row .col-3 ul li a {
+  text-decoration: none;
+  color: gray;
+}
+#beforeFooter .row .col-3 ul li a:hover {
+  color: blue;
+}
+
+#beforeFooter .row .col-3 .d-flex img {
+  padding: 10px;
+  margin-right: 20px;
+  border: 1px solid blue;
+  border-radius: 50%;
+}
+
+#beforeFooter h4{
+  color: #37517e;
+}
+#beforeFooter p{
+  font-size: 14px;
+}
+
+#beforeFooter ul{
+  list-style-type: none;
+}
+#beforeFooter ul li{
+  margin-top: 20px;
+  font-size: 14px;
+}
+#beforeFooter ul li a{
+  color: black;
+  text-decoration: none;
+}
+#beforeFooter ul li a:hover{
+  color: #48b2e4;
+}
+#beforeFooter ul li a::before{
+  content: "> ";
+}
+
+
+.back-to-top.active{
+  visibility: visible;
+  opacity: 1;
+}
+
+.card-body{
+  line-height: 2;
+}
+
+.back-to-top{
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #47b2e4;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+#contact .row .contact-col{
+  border-top: 1px solid #48B2E4; border-bottom: 2px solid #48B2E4; box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
+}
+
+.contact-col img{
+  border: 1px  #48b2e4;
+  border-radius: 40%;
+  background-color: #e7f5fb;
+  padding: 10px;
+}
+.contact-col h4{
+  color: #37517e;
+}
+.contact-col p{
+  color: #6888BD;
+}
+.location:hover, .email:hover, .call:hover{
+    background-color: #F4F5FA;
+}
+
+
+
+/* Animation Rule*/
+
+@keyframes imgtopdown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animated-image {
+  animation: imgtopdown 2s infinite ease-in-out;
+}
+
+section .container .row .col-lg-6 .img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+section .container .row .col-lg-6 h3 {
+  font-weight: 700;
+  font-size: 32px;
+  font-family: headingfont;
+}
+
+#skills {
+  padding: 60px 0;
+}
+
+.cta {
+  background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)),
+    url(/images/cta-bg.jpg) fixed center center;
+  background-size: cover;
+  padding: 80px 0;
+}
+
+.cta .btn {
+  font-family: "headingfont", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.cta a:hover {
+  background-color: #48b2e4;
+  color: white;
+}
+
+#portfolio .img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+#pricing .card-title{
+    color: #37517e;
+    font-weight: 400;
+    font-family: headingfont;
+    margin-bottom: 25px;
+}
+
+#pricing .card{
+    padding: 20px 20px;
+    box-shadow: 0 3px 20px -2px rgba(20, 45, 100, 0.1);
+    background: #fff;
+    height: 100%;
+    border: 4px solid #fff;
+    border-radius: 5px;
+}
+
+#portfolio .container .img-heal{
+  position: relative;
+  color: white;
+}
+
+#portfolio .container .img-text{
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  bottom: 2px;
+  text-align: center;
+}
+#portfolio .container .img-text:hover{
+  opacity: 0.8 !important;
+  background: #3D4E6A;
+  max-height: 20%;
+}
+#portfolio .container .img-heal{
+  transition: transform .2s;
+}
+#portfolio .container .img-heal:hover{
+  transform: scale(1.06);
+}
+
+
+#newsletter{
+  background-color: #F4F5FA; 
+  padding: 48px;
+}
+
+#newsletter h2{
+  text-align: center; 
+  color: #37517E; 
+  font-family: headingfont;
+}
+
+#newsletter p{
+  text-align: center;
+  margin-left: 28%;
+  margin-right: 28%;
+}
+
+#newsletter form{
+  max-width: 80%;
+}
+
+#newsletter .form-control{
+  position: relative;
+}
+#newsletter .input-group-btn{
+  position: absolute;
+  right: 0px;
+}
+
+#clientSection{
+  background-color: #F4F5FA; 
+  padding: 8px;
+}
+
+#clientSection img{
+  margin-bottom: 5%;
+}
+
+#beforeFooter h3{
+  font-family: headingfont;
+}
+#beforeFooter h4{
+  font-family: headingfont;
+}
+
+#services .card{
+    box-shadow: 0 3px 20px -2px rgba(20, 45, 100, 0.1);
+    /* height:250px; */
+    border: 4px solid #fff;
+    border-radius: 5px;
+    background-color: white;
+
+}
+
+#services h5{
+  font-family: headingfont;
+  color: #37517e;
+  font-size: 24px;
+  font-weight: 500;
+}
+#services .card p{
+  font-family: bodyfont;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+#services .p-text{
+  text-align:center ;
+  margin: 20px 20px 0 20px;
+}
+
+#services .card{
+  transition: transform .5s;
+}
+#services .card:hover{
+  transform: translateY(-10px);
+}
+
+
+
+
